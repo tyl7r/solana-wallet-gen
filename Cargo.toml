@@ -1,0 +1,13 @@
+[package]
+name = "SolanaWalletGenerator"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+solana-client = "1.7.14"
+solana-program = "1.7.14"
+solana-sdk = "1.7.14"
+rand = "0.8.5"
+time = "0.3.36"
