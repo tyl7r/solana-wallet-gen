@@ -6,9 +6,9 @@ use std::sync::{Arc, Mutex};
 fn main() {
     //CONFIG
     // String = name you'd like to choose
-    let name = "tyl";
+    let name = "gay";
     // Amt of threads (recommended: 20 for high-end PC, 5 for potato)
-    let threads = 17;
+    let threads = 5;
 
     let mut handles = vec![];
 
@@ -43,6 +43,7 @@ fn main() {
                 if pub_key_str.starts_with(name) {
                     println!("Found matching wallet!");
                     println!("Wallet Public Key: {}", wallet.pubkey());
+                    println!("Wallet Private Key: {:?}", wallet.to_bytes())
                     *found_flag_clone.lock().unwrap() = true;
                     break;
                 }
