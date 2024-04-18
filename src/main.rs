@@ -43,7 +43,7 @@ fn main() {
                 if pub_key_str.starts_with(name) {
                     println!("Found matching wallet!");
                     println!("Wallet Public Key: {}", wallet.pubkey());
-                    println!("Wallet Private Key: {:?}", wallet.to_bytes())
+                    println!("Wallet Private Key: {:?}", wallet.to_bytes());
                     *found_flag_clone.lock().unwrap() = true;
                     break;
                 }
